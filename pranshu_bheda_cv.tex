@@ -25,12 +25,12 @@
 \pagestyle{empty}
 
 \newcommand{\employer}[4]{%
-  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[0pt]
+  \textbf{#1} \;\textbullet\; #2 \hfill \textbf{#3} \\[0pt]
   {\itshape #4}%
 }
 
 \newcommand{\school}[4]{%
-  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[0pt]
+  \textbf{#1} \;\textbullet\; #2 \hfill \textbf{#3} \\[0pt]
   #4%
 }
 
@@ -43,7 +43,7 @@
   label=\textbullet,
   leftmargin=1.2em,
   itemsep=2pt,
-  topsep=2pt,
+  topsep=3pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -87,7 +87,7 @@
 \vspace{3pt}
 \employer{SoFi}{Seattle, WA}{May 2022 -- Aug 2024}{Senior Software Engineer, Identity}
 \begin{cvitems}
-  \item Built and maintained tier-1 authentication and authorization services handling login, registration, and two-factor authentication for millions of SoFi users.
+  \item Built and maintained tier-1 authentication and authorization services handling login, registration, and 2FA for millions of SoFi users.
   \item Improved service availability and resiliency by implementing automated failover for critical login and registration flows.
   \item Contributed to an authorization server powering the SoFi travel experience and a device intelligence framework enabling data-driven risk profiling.
 \end{cvitems}
@@ -101,9 +101,9 @@
 % ── Technical Skills ─────────────────────────────────────────────────────────
 \section{TECHNICAL SKILLS}
 
-\begin{tabular}{@{}p{1.3in}@{\hspace{6pt}}p{5.3in}@{}}
+\begin{tabular}{@{}p{1.05in}@{\hspace{8pt}}p{5.9in}@{}}
   \textbf{Languages} & C, C++, Java, Python, JavaScript, Kotlin, MATLAB \\
-  \textbf{AI / ML} & LLMs, RAG, Agentic Workflows, Feature Engineering, Model Deployment, Real-time \& Batch Inference \\
+  \textbf{AI / ML} & LLMs, RAG, Agentic Workflows, Feature Engineering, Model Deployment, Online \& Batch Inference \\
   \textbf{DevOps \& Cloud} & Kubernetes, Docker, AWS, Datadog, Cloudflare \\
   \textbf{Frontend} & React, AngularJS, Web Components, HTML, CSS \\
   \textbf{Databases} & PostgreSQL, MySQL, MongoDB, Neo4j, Oracle, GraphQL \\
