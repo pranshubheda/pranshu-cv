@@ -1,0 +1,154 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=black,
+}
+
+% Section formatting
+\titleformat{\section}
+  {\bfseries\normalsize}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% Custom commands
+\newcommand{\employer}[4]{%
+  \textbf{#1} $|$ #2 \hfill \textbf{#3} \\
+  \textit{#4}
+}
+
+\newcommand{\school}[4]{%
+  \textbf{#1} $|$ #2 \hfill \textbf{#3} \\
+  #4
+}
+
+\newcommand{\project}[3]{%
+  \textbf{#1} \hfill \textit{#2} \\
+  #3
+}
+
+\begin{document}
+
+% ── Header ──────────────────────────────────────────────────────────────────
+\begin{center}
+  {\Large\bfseries PRANSHU NITIN BHEDA} \\[4pt]
+  pb2053@rit.edu \; $|$ \; +1 (917) 794-8716 \; $|$ \;
+  \href{https://pranshubheda.github.io/}{https://pranshubheda.github.io/}
+\end{center}
+
+% ── Education ───────────────────────────────────────────────────────────────
+\section{EDUCATION}
+
+\school{Rochester Institute of Technology}{Rochester, NY}{May 2020}{Master of Science, Computer Science \quad GPA: 3.67/4}
+
+\medskip
+
+\school{Thakur College of Engineering \& Technology}{Mumbai, India}{May 2017}{Bachelor of Engineering, Information Technology \quad GPA: 7.44/10}
+
+% ── Work Experience ─────────────────────────────────────────────────────────
+\section{WORK EXPERIENCE}
+
+\employer{SoFi}{Seattle, USA}{Aug 2024 -- Present}{Senior Software Engineer, Machine Learning Platform}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Architect and implement internal frameworks that streamlined the end-to-end ML lifecycle at SoFi.
+  \item Developed internal frameworks for feature engineering, model building, training, and deployment that support both real-time (online) and batch (offline) inference use cases.
+\end{itemize}
+
+\medskip
+
+\employer{SoFi}{Seattle, USA}{Aug 2022 -- Aug 2024}{Senior Software Engineer, Identity}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Improve availability and resiliency of service by implementing automated failover mechanism for critical tier-1 services that handle login and registration.
+\end{itemize}
+
+\medskip
+
+\employer{SoFi}{Seattle, USA}{May 2022 -- Aug 2023}{Software Engineer, Identity}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Full-stack development using Java and JavaScript on tier-1 services that handle login, registration, two-factor authentication and authorization for millions of users at a top financial institution.
+  \item Contributed to building an authorization server to power SoFi travel experience.
+  \item Contributed to building a framework to gather device intelligence for a user session to enable data driven risk profiling.
+\end{itemize}
+
+\medskip
+
+\employer{MathWorks}{Natick, USA}{May 2020 -- May 2022}{Software Engineer, Install \& Licensing}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Full-stack development on MathWorks Product Installer using JavaScript on the frontend and C++ on the backend.
+  \item Contributed to the design of an event driven architecture to make the installer data driven while migrating legacy code.
+  \item Developed the progress panel widget and the logic to handle back and forth navigation in the installer.
+\end{itemize}
+
+% ── Technical Skills ─────────────────────────────────────────────────────────
+\section{TECHNICAL SKILLS}
+
+\textbf{Programming Languages:} C, C++, Java, Python, JavaScript, MATLAB, Kotlin \\
+\textbf{Devops:} Kubernetes, Docker, Datadog, Cloudflare, AWS \\
+\textbf{UI Development:} AngularJS, React, DOJO, Lit, Web Components, HTML, CSS \\
+\textbf{Data Engineering:} Pentaho Data Integration \\
+\textbf{Database:} MySQL, Neo4j, Apache Jena, Oracle, PostgreSQL, MongoDB, SPARQL, Cypher, GraphQL
+
+% ── Projects ────────────────────────────────────────────────────────────────
+\section{PROJECTS}
+
+\project{MATLAB Blockly}{3\textsuperscript{rd} Place Hackathon}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Developed a block based visual programming editor enabling users to generate MATLAB code by connecting blocks of code together like a puzzle to build programs. Helps overcome the initial syntax barrier in introductory programming assignments. \\
+        \textit{Stack: MATLAB, JavaScript}
+\end{itemize}
+
+\medskip
+
+\project{GPS Data Analysis}{Academic}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Analysis of GPS data collected from an Arduino connected to a car to identify the best route from given source to destination.
+  \item Involved data cleaning, data clustering and objective function minimization to identify the best route. \\
+        \textit{Stack: Python, Pandas, SK Learn}
+\end{itemize}
+
+\medskip
+
+\project{Social Network Analysis -- DBLP Dataset}{Academic}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Creating a co-author network from an XML dump and loading the derived network in a Neo4j database for effective querying. Analyzing the derived network using graph theory to identify collaboration patterns amongst research communities. \\
+        \textit{Stack: Java, MySQL, MongoDB, Neo4j}
+\end{itemize}
+
+\medskip
+
+\project{Machine Learning on Graphs}{Academic}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Graph representation learning using the TransE algorithm followed by link prediction using the IMDB knowledge graph. \\
+        \textit{Stack: Java, Apache Jena}
+\end{itemize}
+
+\medskip
+
+\project{Mobile Robot Programming -- Pioneer P3-DX}{Academic}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Implemented occupancy grid mapping, particle filter localization and theta star path planning algorithm using laser scan and sonar sensors. \\
+        \textit{Stack: ROS, Python}
+\end{itemize}
+
+\medskip
+
+\project{Quantum Algorithms}{Academic}{}
+\begin{itemize}[leftmargin=1.5em, itemsep=0pt, topsep=4pt]
+  \item Developed and presented a seminar in quantum algorithms, Fall 2019 -- Deutsch-Jozsa Algorithm.
+\end{itemize}
+
+\end{document}
