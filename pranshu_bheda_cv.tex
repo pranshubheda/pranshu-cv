@@ -1,6 +1,6 @@
 \documentclass[10pt, letterpaper]{article}
 
-\usepackage[top=0.45in, bottom=0.45in, left=0.6in, right=0.6in]{geometry}
+\usepackage[top=0.4in, bottom=0.4in, left=0.6in, right=0.6in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
@@ -56,92 +56,90 @@
 
 \school{Rochester Institute of Technology}{Rochester, NY}{May 2020}{Master of Science, Computer Science \hspace{1em} GPA: 3.67/4}
 
-\vspace{4pt}
+\vspace{3pt}
 
 \school{Thakur College of Engineering \& Technology}{Mumbai, India}{May 2017}{Bachelor of Engineering, Information Technology \hspace{1em} GPA: 7.44/10}
 
 % ── Work Experience ─────────────────────────────────────────────────────────
 \section{WORK EXPERIENCE}
 
-\employer{SoFi}{Seattle, USA}{Aug 2024 -- Present}{Senior Software Engineer, Machine Learning Platform}
+\employer{SoFi}{Seattle, WA}{Sep 2025 -- Present}{Staff Software Engineer, AI \& Customer Experience}
 \begin{cvitems}
-  \item Architect and implement internal frameworks that streamlined the end-to-end ML lifecycle at SoFi.
-  \item Developed internal frameworks for feature engineering, model building, training, and deployment that support both real-time (online) and batch (offline) inference use cases.
+  \item Led a RAG-based customer support tool from side project through funding approval to formal adoption; now lead the team, with projected \$1M in annual savings for SoFi.
+  \item Build AI-powered tools that improve agent productivity and customer support effectiveness at scale.
 \end{cvitems}
 
 \vspace{2pt}
-\employer{SoFi}{Seattle, USA}{Aug 2022 -- Aug 2024}{Senior Software Engineer, Identity}
+\employer{SoFi}{Seattle, WA}{Aug 2024 -- Sep 2025}{Senior Software Engineer, Machine Learning Platform}
 \begin{cvitems}
-  \item Improve availability and resiliency of service by implementing automated failover mechanism for critical tier-1 services that handle login and registration.
+  \item Architected and implemented infrastructure that streamlined the end-to-end ML lifecycle at SoFi.
+  \item Developed scalable frameworks for feature engineering and model deployment supporting real-time (online) and batch (offline) inference at scale.
 \end{cvitems}
 
 \vspace{2pt}
-\employer{SoFi}{Seattle, USA}{May 2022 -- Aug 2023}{Software Engineer, Identity}
+\employer{SoFi}{Seattle, WA}{Sep 2023 -- Aug 2024}{Senior Software Engineer, Identity}
 \begin{cvitems}
-  \item Full-stack development using Java and JavaScript on tier-1 services that handle login, registration, two-factor authentication and authorization for millions of users at a top financial institution.
-  \item Contributed to building an authorization server to power SoFi travel experience.
-  \item Contributed to building a framework to gather device intelligence for a user session to enable data driven risk profiling.
+  \item Improved availability and resiliency of tier-1 services by implementing automated failover for login and registration flows serving millions of SoFi users.
 \end{cvitems}
 
 \vspace{2pt}
-\employer{MathWorks}{Natick, USA}{May 2020 -- May 2022}{Software Engineer, Install \& Licensing}
+\employer{SoFi}{Seattle, WA}{May 2022 -- Sep 2023}{Software Engineer, Identity}
 \begin{cvitems}
-  \item Full-stack development on MathWorks Product Installer using JavaScript on the frontend and C++ on the backend.
-  \item Contributed to the design of an event driven architecture to make the installer data driven while migrating legacy code.
-  \item Developed the progress panel widget and the logic to handle back and forth navigation in the installer.
+  \item Delivered full-stack features on tier-1 authentication and authorization services handling login, registration, and two-factor authentication for millions of users.
+  \item Contributed to an authorization server powering the SoFi travel experience and a device intelligence framework enabling data-driven risk profiling.
+\end{cvitems}
+
+\vspace{2pt}
+\employer{MathWorks}{Natick, MA}{May 2020 -- May 2022}{Software Engineer, Install \& Licensing}
+\begin{cvitems}
+  \item Built full-stack features for MathWorks Product Installer (JavaScript frontend, C++ backend) and designed an event-driven architecture to make the installer data-driven while migrating legacy code.
 \end{cvitems}
 
 % ── Technical Skills ─────────────────────────────────────────────────────────
 \section{TECHNICAL SKILLS}
 
-\textbf{Programming Languages:} C, C++, Java, Python, JavaScript, MATLAB, Kotlin \\
+\textbf{Languages:} C, C++, Java, Python, JavaScript, MATLAB, Kotlin \\
+\textbf{AI/ML:} LLMs, RAG, Agentic Workflows, Feature Engineering, Model Deployment, Real-time \& Batch Inference \\
 \textbf{Devops:} Kubernetes, Docker, Datadog, Cloudflare, AWS \\
-\textbf{UI Development:} AngularJS, React, DOJO, Lit, Web Components, HTML, CSS \\
-\textbf{Data Engineering:} Pentaho Data Integration \\
-\textbf{Database:} MySQL, Neo4j, Apache Jena, Oracle, PostgreSQL, MongoDB, SPARQL, Cypher, GraphQL
+\textbf{UI:} React, AngularJS, Web Components, HTML, CSS \\
+\textbf{Database:} MySQL, PostgreSQL, MongoDB, Neo4j, Oracle, GraphQL
 
 % ── Projects ────────────────────────────────────────────────────────────────
 \section{PROJECTS}
 
 \project{MATLAB Blockly}{3\textsuperscript{rd} Place Hackathon}
 \begin{cvitems}
-  \item Developed a block based visual programming editor enabling users to generate MATLAB code by connecting blocks of code together like a puzzle to build programs. Helps overcome the initial syntax barrier in introductory programming assignments.
-        \textit{Stack: MATLAB, JavaScript}
-\end{cvitems}
-
-\vspace{1pt}
-\project{GPS Data Analysis}{Academic}
-\begin{cvitems}
-  \item Analysis of GPS data collected from an Arduino connected to a car to identify the best route from given source to destination.
-  \item Involved data cleaning, data clustering and objective function minimization to identify the best route.
-        \textit{Stack: Python, Pandas, SK Learn}
-\end{cvitems}
-
-\vspace{1pt}
-\project{Social Network Analysis -- DBLP Dataset}{Academic}
-\begin{cvitems}
-  \item Creating a co-author network from an XML dump and loading the derived network in a Neo4j database for effective querying. Analyzing the derived network using graph theory to identify collaboration patterns amongst research communities.
-        \textit{Stack: Java, MySQL, MongoDB, Neo4j}
-\end{cvitems}
-
-\vspace{1pt}
-\project{Machine Learning on Graphs}{Academic}
-\begin{cvitems}
-  \item Graph representation learning using the TransE algorithm followed by link prediction using the IMDB knowledge graph.
-        \textit{Stack: Java, Apache Jena}
+  \item Block-based visual programming editor enabling users to generate MATLAB code by connecting code blocks like a puzzle, lowering the syntax barrier for introductory programming. \textit{Stack: MATLAB, JavaScript}
 \end{cvitems}
 
 \vspace{1pt}
 \project{Mobile Robot Programming -- Pioneer P3-DX}{Academic}
 \begin{cvitems}
-  \item Implemented occupancy grid mapping, particle filter localization and theta star path planning algorithm using laser scan and sonar sensors.
-        \textit{Stack: ROS, Python}
+  \item Implemented occupancy grid mapping, particle filter localization, and theta-star path planning using laser scan and sonar sensors. \textit{Stack: ROS, Python}
+\end{cvitems}
+
+\vspace{1pt}
+\project{Machine Learning on Graphs}{Academic}
+\begin{cvitems}
+  \item Applied the TransE algorithm for graph representation learning and link prediction on the IMDB knowledge graph. \textit{Stack: Java, Apache Jena}
+\end{cvitems}
+
+\vspace{1pt}
+\project{Social Network Analysis -- DBLP Dataset}{Academic}
+\begin{cvitems}
+  \item Built a co-author network from an XML dump, loaded it into Neo4j, and applied graph theory to identify collaboration patterns across research communities. \textit{Stack: Java, MySQL, MongoDB, Neo4j}
+\end{cvitems}
+
+\vspace{1pt}
+\project{GPS Data Analysis}{Academic}
+\begin{cvitems}
+  \item Analyzed GPS data from an Arduino-equipped car to identify optimal routes using data cleaning, clustering, and objective function minimization. \textit{Stack: Python, Pandas, scikit-learn}
 \end{cvitems}
 
 \vspace{1pt}
 \project{Quantum Algorithms}{Academic}
 \begin{cvitems}
-  \item Developed and presented a seminar in quantum algorithms, Fall 2019 -- Deutsch-Jozsa Algorithm.
+  \item Developed and presented a seminar on the Deutsch-Jozsa Algorithm (Fall 2019).
 \end{cvitems}
 
 \end{document}
