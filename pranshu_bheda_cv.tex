@@ -1,11 +1,12 @@
 \documentclass[10pt, letterpaper]{article}
 
-\usepackage[top=0.35in, bottom=0.35in, left=0.55in, right=0.55in]{geometry}
+\usepackage[top=0.5in, bottom=0.5in, left=0.7in, right=0.7in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{microtype}
 \usepackage{xcolor}
 
@@ -14,35 +15,35 @@
 \hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
 
 \titleformat{\section}
-  {\bfseries\color{accent}\normalsize}
+  {\bfseries\color{accent}\large}
   {}{0em}{}
   [\vspace{1pt}{\color{accent}\titlerule[0.6pt]}]
-\titlespacing{\section}{0pt}{6pt}{2pt}
+\titlespacing{\section}{0pt}{8pt}{4pt}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 \pagestyle{empty}
 
 \newcommand{\employer}[4]{%
-  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[-1pt]
-  {\itshape\small #4}%
+  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[0pt]
+  {\itshape #4}%
 }
 
 \newcommand{\school}[4]{%
-  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[-1pt]
-  {\small #4}%
+  \textbf{#1} \; $\vert$ \; #2 \hfill \textbf{#3} \\[0pt]
+  #4%
 }
 
 \newcommand{\project}[2]{%
-  \textbf{#1} \hfill {\small\itshape #2}%
+  \textbf{#1} \hfill {\itshape #2}%
 }
 
 \newlist{cvitems}{itemize}{1}
 \setlist[cvitems]{
   label=\textbullet,
   leftmargin=1.2em,
-  itemsep=0pt,
-  topsep=1pt,
+  itemsep=2pt,
+  topsep=2pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -64,7 +65,7 @@
 
 \school{Rochester Institute of Technology}{Rochester, NY}{May 2020}{Master of Science, Computer Science \hfill GPA: 3.67/4}
 
-\vspace{2pt}
+\vspace{3pt}
 
 \school{Thakur College of Engineering \& Technology}{Mumbai, India}{May 2017}{Bachelor of Engineering, Information Technology \hfill GPA: 7.44/10}
 
@@ -76,14 +77,14 @@
   \item Led a RAG-based customer support tool from side project through funding approval to formal adoption; now lead the team, with \textbf{projected \$1M in annual savings} for SoFi.
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{3pt}
 \employer{SoFi}{Seattle, WA}{Aug 2024 -- Sep 2025}{Senior Software Engineer, Machine Learning Platform}
 \begin{cvitems}
   \item Architected ML platform frameworks for feature engineering, training, and deployment supporting real-time and batch inference at scale.
   \item Shipped an Account Takeover (ATO) detection model at login, with \textbf{estimated \$1M in annual fraud savings}.
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{3pt}
 \employer{SoFi}{Seattle, WA}{May 2022 -- Aug 2024}{Senior Software Engineer, Identity}
 \begin{cvitems}
   \item Built and maintained tier-1 authentication and authorization services handling login, registration, and two-factor authentication for millions of SoFi users.
@@ -91,7 +92,7 @@
   \item Contributed to an authorization server powering the SoFi travel experience and a device intelligence framework enabling data-driven risk profiling.
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{3pt}
 \employer{MathWorks}{Natick, MA}{May 2020 -- May 2022}{Software Engineer, Install \& Licensing}
 \begin{cvitems}
   \item Built full-stack features for MathWorks Product Installer (JavaScript frontend, C++ backend) and designed an event-driven architecture to make the installer data-driven while migrating legacy code.
@@ -100,7 +101,7 @@
 % ── Technical Skills ─────────────────────────────────────────────────────────
 \section{TECHNICAL SKILLS}
 
-\begin{tabular}{@{}p{1.3in}@{\hspace{6pt}}p{5.6in}@{}}
+\begin{tabular}{@{}p{1.3in}@{\hspace{6pt}}p{5.3in}@{}}
   \textbf{Languages} & C, C++, Java, Python, JavaScript, Kotlin, MATLAB \\
   \textbf{AI / ML} & LLMs, RAG, Agentic Workflows, Feature Engineering, Model Deployment, Real-time \& Batch Inference \\
   \textbf{DevOps \& Cloud} & Kubernetes, Docker, AWS, Datadog, Cloudflare \\
@@ -116,31 +117,22 @@
   \item Block-based visual programming editor that generates MATLAB code by connecting code blocks, lowering the syntax barrier for introductory programming. \textit{Stack: MATLAB, JavaScript}
 \end{cvitems}
 
-\vspace{1pt}
+\vspace{2pt}
 \project{Mobile Robot Programming -- Pioneer P3-DX}{Academic}
 \begin{cvitems}
   \item Implemented occupancy grid mapping, particle filter localization, and theta-star path planning using laser scan and sonar sensors. \textit{Stack: ROS, Python}
 \end{cvitems}
 
-\vspace{1pt}
+\vspace{2pt}
 \project{Machine Learning on Graphs}{Academic}
 \begin{cvitems}
   \item Applied the TransE algorithm for graph representation learning and link prediction on the IMDB knowledge graph. \textit{Stack: Java, Apache Jena}
 \end{cvitems}
 
-\vspace{1pt}
+\vspace{2pt}
 \project{Social Network Analysis -- DBLP Dataset}{Academic}
 \begin{cvitems}
   \item Built a co-author network from an XML dump, loaded it into Neo4j, and applied graph theory to identify collaboration patterns across research communities. \textit{Stack: Java, MySQL, MongoDB, Neo4j}
 \end{cvitems}
-
-\vspace{1pt}
-\project{GPS Data Analysis}{Academic}
-\begin{cvitems}
-  \item Analyzed GPS data from an Arduino-equipped car to identify optimal routes using data cleaning, clustering, and objective function minimization. \textit{Stack: Python, Pandas, scikit-learn}
-\end{cvitems}
-
-\vspace{1pt}
-\textbf{Quantum Algorithms} --- Developed and presented a graduate seminar on the Deutsch-Jozsa Algorithm. \hfill {\small\itshape Academic Seminar}
 
 \end{document}
