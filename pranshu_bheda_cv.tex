@@ -1,6 +1,6 @@
 \documentclass[10pt, letterpaper]{article}
 
-\usepackage[top=0.5in, bottom=0.5in, left=0.7in, right=0.7in]{geometry}
+\usepackage[top=0.35in, bottom=0.35in, left=0.5in, right=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
@@ -18,7 +18,7 @@
   {\bfseries\color{accent}\large}
   {}{0em}{}
   [\vspace{1pt}{\color{accent}\titlerule[0.6pt]}]
-\titlespacing{\section}{0pt}{8pt}{4pt}
+\titlespacing{\section}{0pt}{6pt}{3pt}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -42,8 +42,8 @@
 \setlist[cvitems]{
   label=\textbullet,
   leftmargin=1.2em,
-  itemsep=2pt,
-  topsep=3pt,
+  itemsep=1pt,
+  topsep=2pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -74,25 +74,25 @@
 
 \employer{SoFi}{Seattle, WA}{Sep 2025 -- Present}{Staff Software Engineer, AI \& Customer Experience}
 \begin{cvitems}
-  \item Drove a RAG-based customer support tool from a side project through funding approval to formal adoption; now leading the team, with \textbf{projected \$1M in annual savings} for SoFi.
+  \item Drove a RAG-based customer support tool from side project to formal adoption; now leading the team, with \textbf{projected \$1M in annual savings}.
 \end{cvitems}
 
-\vspace{3pt}
+\vspace{2pt}
 \employer{SoFi}{Seattle, WA}{Aug 2024 -- Sep 2025}{Senior Software Engineer, Machine Learning Platform}
 \begin{cvitems}
   \item Architected ML platform frameworks for feature engineering, model training, and deployment, supporting real-time and batch inference at scale.
   \item Shipped an Account Takeover (ATO) detection model integrated into login flows, driving \textbf{estimated \$1M in annual fraud savings}.
 \end{cvitems}
 
-\vspace{3pt}
+\vspace{2pt}
 \employer{SoFi}{Seattle, WA}{May 2022 -- Aug 2024}{Senior Software Engineer, Identity}
 \begin{cvitems}
   \item Built and maintained tier-1 authentication and authorization services handling login, registration, and 2FA for millions of SoFi users.
   \item Improved service availability and resiliency by implementing automated failover for critical login and registration flows.
-  \item Developed an authorization server powering the SoFi travel experience, and a device intelligence framework enabling data-driven risk profiling.
+  \item Developed an authorization server powering SoFi's travel experience and a device intelligence framework for data-driven risk profiling.
 \end{cvitems}
 
-\vspace{3pt}
+\vspace{2pt}
 \employer{MathWorks}{Natick, MA}{May 2020 -- May 2022}{Software Engineer, Install \& Licensing}
 \begin{cvitems}
   \item Built full-stack features for MathWorks Product Installer (JavaScript frontend, C++ backend); designed an event-driven architecture that migrated legacy code toward a data-driven installer.
@@ -101,7 +101,7 @@
 % ── Technical Skills ─────────────────────────────────────────────────────────
 \section{TECHNICAL SKILLS}
 
-\begin{tabular}{@{}p{1.05in}@{\hspace{8pt}}p{5.9in}@{}}
+\begin{tabular}{@{}p{1.05in}@{\hspace{8pt}}p{6.35in}@{}}
   \textbf{Languages} & C, C++, Java, Python, JavaScript, Kotlin, MATLAB \\
   \textbf{AI / ML} & LLMs, RAG, Agentic Workflows, Feature Engineering, Model Deployment, Online \& Batch Inference \\
   \textbf{DevOps \& Cloud} & Kubernetes, Docker, AWS, Datadog, Cloudflare \\
@@ -117,22 +117,34 @@
   \item Block-based visual programming editor that generates MATLAB code by connecting code blocks, lowering the syntax barrier for introductory programming. \textit{Stack: MATLAB, JavaScript}
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{1pt}
 \project{Mobile Robot Programming -- Pioneer P3-DX}{}
 \begin{cvitems}
   \item Implemented occupancy grid mapping, particle filter localization, and theta-star path planning using laser scan and sonar sensors. \textit{Stack: ROS, Python}
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{1pt}
 \project{Machine Learning on Graphs}{}
 \begin{cvitems}
   \item Applied the TransE algorithm for graph representation learning and link prediction on the IMDB knowledge graph. \textit{Stack: Java, Apache Jena}
 \end{cvitems}
 
-\vspace{2pt}
+\vspace{1pt}
 \project{Social Network Analysis -- DBLP Dataset}{}
 \begin{cvitems}
   \item Built a co-author network from an XML dump, loaded it into Neo4j, and applied graph theory to identify collaboration patterns across research communities. \textit{Stack: Java, MySQL, MongoDB, Neo4j}
+\end{cvitems}
+
+\vspace{1pt}
+\project{GPS Data Analysis}{}
+\begin{cvitems}
+  \item Analyzed GPS traces from an Arduino-equipped vehicle to identify optimal routes; applied data cleaning, clustering, and objective-function minimization. \textit{Stack: Python, Pandas, scikit-learn}
+\end{cvitems}
+
+\vspace{1pt}
+\project{Quantum Algorithms}{}
+\begin{cvitems}
+  \item Presented a graduate seminar on the Deutsch-Jozsa algorithm and its quantum speedup over classical approaches.
 \end{cvitems}
 
 \end{document}
